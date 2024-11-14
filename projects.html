@@ -3,50 +3,47 @@
 <head>
 	<style type="text/css">
 		#background{
-			position:fixed;
+			position:absolute;
 			width:100%;
 			margin-top:20px;
 			height:750px;
 			background-image:url(pizza.png);
-			background-size:cover;
-		#hello{
-			position:fixed;
-			display:inline-block;
-			margin-left: -270px;
-			left: 25%;
-			width: 100px;
-			height: 100px;
 			background-size:contain;
 			background-repeat: no-repeat;
-			background-image:url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQaJNC8VO-VnPC4XQ3xKanLEXgHO9WNfnHfOA&s);
-			}
-			#hi{
-			
-			display:inline-block;
-			position:fixed;
-			margin-left: -270px;
-			margin-top: 100px;
-			left: 25%;
-			width: 175px;
-			height: 175px;
-			background-size:contain;
-			background-repeat: no-repeat;
-			background-image:url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTjPZKYx1RQsYpa_LoBckKrQB_UwUYekg8yg&s);
-			}
-	</style>
 
+			z-index:0;
+		}
+
+		.toppings{
+			position: relative;
+			background-size: cover;
+			width: 131px;
+			height: 110px;
+			z-index: 10;
+			margin-top:20px;
+			display: inline-block;
+		}
+		#pepp{
+			background-image: url(pepp.png);
+			margin-left:305px;
+		}
+
+		#hi{
+			background-color:darkred;
+		}
+	</style>
 
 
 	
 </head>
 <body>
-		<div id="background">
+		<div id="background"></div>
 
 		</h3>
-	<a href = "day1.html">
-<div id="hello"> </div>
+	<a href = "day 1.html">
+<div class = "toppings" id="pepp"> </div>
 <a href = "halloween.html">
-<div id="hi"> </div>
+<div class = "toppings" id="hi"> </div>
 </a>
 </body>
 </html>

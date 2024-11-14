@@ -5,7 +5,6 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title></title>
 </head>
-<h1 style = "color: darkred; position: fixed; margin-left: 630px; margin-top: 100px; "> PIZZA SHOP </h1>
 	<style type="text/css">
 
 		a{
@@ -22,21 +21,24 @@
 			height:850px;
 			background-image:url(https://img.freepik.com/premium-vector/food-court-indoor-interior-empty-restaurant-cafeteria-illustration_7081-2057.jpg?semt=ais_hybrid);
 			background-size:cover;
+			z-index: -5;
 
 		}
 		.bam{
 			width: 30px;
 			height: 50px;
-			postion: absolute;
+			position: relative;
 			overflow-y: auto;
 			display: inline-block;
 			opacity: 30%;
 			background-size: contain;
 			background-repeat: no-repeat;
 			background-image:url(https://attic.sh/b7p00sgsc7is7pt7w5ti349aaujz);
+			z-index: 0;
 		}
 		#projects{
 			opacity: 100%;
+
 			position:fixed;
 			display:inline-block;
 			margin-top:100px;
@@ -46,6 +48,7 @@
 			background-size:contain;
 			background-repeat: no-repeat;
 			background-image:url(https://attic.sh/p51ll69lma61p54j5l6ndiqekjpj);
+			z-index: 10;
 
 		}
 
@@ -60,6 +63,8 @@
 			background-size:contain;
 			background-repeat: no-repeat;
 			background-image:url(https://attic.sh/cbseb09578f91iihyxobv45qoa86); 
+						z-index: 10;
+
 		}
 		
 	</style>
@@ -68,7 +73,7 @@
 
 <body>
 
-	<div id="background">
+	<div id="background"></div>
 <a href="projects.html">
 
 <div id="projects"> </div>
@@ -93,6 +98,7 @@
 		let slice = document.createElement("div")
 		document.body.appendChild(slice)
 		slice.classList.add("bam")
+		// slice.style.zIndex = "-10"
 	}
 
 	for(let i=0; i<10000; i=i+1){
