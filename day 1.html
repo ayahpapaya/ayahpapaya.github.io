@@ -5,7 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title></title>
 	<style type="text/css">
-		#ayah{
+		.ayah{
 			border-radius: 50%;
 			width:50px;
 			height:50px;
@@ -13,88 +13,29 @@
 			display:inline-block;
 			transition:8s;
 		}
-		#ayah:tap{
+		.ayah:hover{
 
 			background-color:firebrick;
-			transition:8s;
-			transform:rotate(900deg);
-			border-radius:0%;
+			transition:.2s;
+			border-raius: 0%;
+		
 		}
 	</style>
 </head>
 <body>
-<div id = "ayah"> </div>
-<div id = "ayah"> </div>
-<div id = "ayah"> </div>
-<div id = "ayah"> </div>
-<div id = "ayah"> </div>
-<div id = "ayah"> </div>
-<div id = "ayah"> </div>
-<div id = "ayah"> </div>
-<div id = "ayah"> </div>
-<div id = "ayah"> </div>
-<div id = "ayah"> </div>
-<div id = "ayah"> </div>
-<div id = "ayah"> </div>
-<div id = "ayah"> </div>
-<div id = "ayah"> </div>
-<div id = "ayah"> </div>
-<div id = "ayah"> </div>
-<div id = "ayah"> </div>
-<div id = "ayah"> </div>
-<div id = "ayah"> </div>
-<div id = "ayah"> </div>
-<div id = "ayah"> </div>
-<div id = "ayah"> </div>
-<div id = "ayah"> </div>
-<div id = "ayah"> </div>
-<div id = "ayah"> </div>
-<div id = "ayah"> </div>
-<div id = "ayah"> </div>
-<div id = "ayah"> </div>
-<div id = "ayah"> </div>
-<div id = "ayah"> </div>
-<div id = "ayah"> </div>
-<div id = "ayah"> </div>
-<div id = "ayah"> </div>
-<div id = "ayah"> </div>
-<div id = "ayah"> </div>
-<div id = "ayah"> </div>
-<div id = "ayah"> </div>
-<div id = "ayah"> </div>
-<div id = "ayah"> </div>
-<div id = "ayah"> </div>
-<div id = "ayah"> </div>
-<div id = "ayah"> </div>
-<div id = "ayah"> </div>
-<div id = "ayah"> </div>
-<div id = "ayah"> </div>
-<div id = "ayah"> </div>
-<div id = "ayah"> </div>
-<div id = "ayah"> </div>
-<div id = "ayah"> </div>
-<div id = "ayah"> </div>
-<div id = "ayah"> </div>
-<div id = "ayah"> </div>
-<div id = "ayah"> </div>
-<div id = "ayah"> </div>
-<div id = "ayah"> </div>
-<div id = "ayah"> </div>
-<div id = "ayah"> </div>
-<div id = "ayah"> </div>
-<div id = "ayah"> </div>
-<div id = "ayah"> </div>
-<div id = "ayah"> </div>
-<div id = "ayah"> </div>
-<div id = "ayah"> </div>
-<div id = "ayah"> </div>
-<div id = "ayah"> </div>
-<div id = "ayah"> </div>
-<div id = "ayah"> </div>
-<div id = "ayah"> </div>
-<div id = "ayah"> </div>
-<div id = "ayah"> </div>
-<div id = "ayah"> </div>
+<script type="text/javascript">
+function makeSlice (){
+		let slice = document.createElement("div")
+		document.body.appendChild(slice)
+		slice.classList.add("ayah")
+	
+	}
 
+	for(let i=0; i<10000; i=i+1){
+		makeSlice()
+	}
+	
+        var margin = 0;
+    </script>
 </body>
 </html>

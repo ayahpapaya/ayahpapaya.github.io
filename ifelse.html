@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style type="text/css">
+
+	.squareMusic{
+		width:300px;
+		height:300px;
+		background-color: aliceblue;
+		display: inline-block;
+		}
+	</style>
+</head>
+<body>
+
+
+<script type ="text/javascript">
+	function makeSquare(){
+		let slice = document.createElement("div")
+		document.body.appendChild(slice)
+		slice.classList.add("squareMusic")
+	}
+	for(let i=0; i<10000; i=i+1){
+		makeSquare()
+	}
+	
+
+	let blank = true
+	squareMusic.addEventListener("click", function(){
+	if(blank == true){
+		squareMusic.style.backgroundColor="magenta"
+		blank = false
+	}
+	else if (blank == false){
+		squareMusic.style.backgroundColor="aliceblue"
+		blank = true
+	}
+}
+)
+
+
+ </script>
+</body>
+</html>

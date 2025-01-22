@@ -14,6 +14,20 @@
 		body{
 			margin:0px;
 		}
+		#pizzaman{
+			position: fixed;
+			opacity: 100;
+			width: 45%;
+			left: 50%;
+			top: 720px;
+			height: 500px;
+			background-image:url(pizzaguy.png);
+			background-size: cover;
+			background-repeat: no-repeat;
+			z-index: 13;
+			transition: 5s;
+
+		}
 
 		#background{
 			position:fixed;
@@ -35,10 +49,10 @@
 			background-repeat: no-repeat;
 			background-image:url(https://attic.sh/b7p00sgsc7is7pt7w5ti349aaujz);
 			z-index: 0;
+
 		}
 		#projects{
-			opacity: 100%;
-
+			
 			position:fixed;
 			display:inline-block;
 			margin-top:100px;
@@ -48,12 +62,12 @@
 			background-size:contain;
 			background-repeat: no-repeat;
 			background-image:url(https://attic.sh/p51ll69lma61p54j5l6ndiqekjpj);
-			z-index: 10;
-
+			z-index: -10;
+			
 		}
 
 		#journal{
-			opacity: 100%;
+			
 			position: fixed;
 			left: 10.5%;
 			margin-top:100px;
@@ -63,7 +77,8 @@
 			background-size:contain;
 			background-repeat: no-repeat;
 			background-image:url(https://attic.sh/cbseb09578f91iihyxobv45qoa86); 
-						z-index: 10;
+			z-index: -10;
+		
 
 		}
 		
@@ -72,11 +87,13 @@
 </head>
 
 <body>
+	<div id ="pizzaman"></div>
 
 	<div id="background"></div>
+
 <a href="projects.html">
 
-<div id="projects"> </div>
+<div id="projects" > </div>
 </a>
 
 
@@ -85,14 +102,20 @@
 <a href="journal.html">
 
 <div id="journal"></div>
-
 </a>
 <div id ='text1'></div>
-
+</div>
 
 
 
 <script type="text/javascript">
+
+	pizzaman.addEventListener("click", function(){
+			alert("Welcome to the pizza shop!")
+			projects.style.zIndex = "10"
+			journal.style.zIndex = "10"
+
+		})
 	
 	function makeSlice (){
 		let slice = document.createElement("div")
@@ -104,6 +127,30 @@
 	for(let i=0; i<10000; i=i+1){
 		makeSlice()
 	}
+	
+        var margin = 0;
+ 
+
+        	pizzaman.style.top = "720px"
+        	var up = 0;
+
+        	function moveUp (){
+
+        		if (up>70){
+        			clearInterval(x)
+        		}
+        		
+        		else {up = up+10;
+        		pizzaman.style.top = parseInt(pizzaman.style.top)-up +"px";
+        		console.log("are you the pizzaman?")}
+
+
+        	}
+
+        	var x = setInterval(moveUp, 500)
+
+		        // var myVar = setInterval(pizzaDiv, 90);
+
 </script>
 
 
