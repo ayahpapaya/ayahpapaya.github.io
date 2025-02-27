@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style type="text/css">
+		.box{
+			width: 200px;
+			height: 200px;
+			position: relative;
+			display: inline-block;
+			background-repeat: no-repeat;
+			background-size:contain;
+		}
+		#box1{
+			background-color: paleturquoise;
+		}
+		#back{
+			background-color: lightblue;
+			width: 100px;
+			height:20px;
+
+			text-align: center;
+			font-family: arial;
+			font-weight: bold;
+			z-index: 20;
+	
+
+
+
+		}
+	</style>
+</head>
+<body>
+	<a href="projects.html">
+	<div id = "back" >h o m e</div>
+</a>
+
+	<audio id = "sound" src="ayahchristmas.mp3"></audio>
+
+	<div = class = "box" id="box1"></div>
+		<div = class = "box" id="box2"></div>
+			<div = class = "box" id="box3"></div>
+	<script type="text/javascript">
+	let lightswitch = true;
+	box1.addEventListener("click", function(){
+		if (lightswitch==true){
+			sound.play()
+			lightswitch = false
+				console.log(lightswitch)
+		}
+	else if (lightswitch==false){
+		sound.pause()
+		lightswitch = true
+		console.log(lightswitch)
+	}
+
+	let supers = true;
+	box2.addEventListener("click", function(){
+		if (supers==true){
+			sound.play()
+			supers = false
+				console.log(supers)
+		}
+	else if (supers==false){
+		sound.pause()
+		supers = true
+		console.log(supers)
+	}
+
+	let cool = true;
+	box3.addEventListener("click", function(){
+		if (cool==true){
+			sound.play()
+			cool = false
+				console.log(cool)
+		}
+	else if (cool==false){
+		sound.pause()
+		cool = true
+		console.log(cool)
+	}
+	})
+
+
+
+</script>
+</body>
+</html>

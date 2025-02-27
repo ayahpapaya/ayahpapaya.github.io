@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style type="text/css">
+		body{
+			background-color: lightpink;
+
+		
+	}
+
+
+
+		.confetti{
+			background-color:palevioletred;
+			position: absolute;
+			border-radius: 25%;
+			margin: 10px;
+			width:20px;
+			height:20px;
+			display:inline-block;
+			z-index: -10;
+
+		
+		}
+		.conf{
+			background-color: indianred;
+			position: absolute;
+			border-radius: 25%;
+			margin: 10px;
+			width:20px;
+			height:20px;
+			display:inline-block;
+			z-index: -10;
+
+		}
+		
+		#rat{
+			width: 200px;
+			position: relative;
+			height: 200px;
+			background-image: url("rat1.png");
+			margin-left: 550px;
+			background-size: cover;
+		}
+		#rat:hover{
+			transition:2s;
+			rotate: 360deg;
+		
+		}
+
+	</style>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+	<a href = "ratsnew.html">
+		<div id=rat></div>
+	</a>
+
+	<h1 style="font-family: arial; color: darkred; font-size:100px;"> <b> <center> HAPPY RATENTINES <br> DAY <center> <b> </h1>
+
+	<script type="text/javascript">
+
+		function makeConfetti(){
+			let sprinkle = document.createElement("div")
+			document.body.appendChild(sprinkle)
+			sprinkle.classList.add("confetti")
+			sprinkle.style.top="-100px"
+
+
+		
+		function fall(){
+			if (parseInt(sprinkle.style.top)>1000){
+			sprinkle.style.top=="-100px"
+			
+		}
+		else{
+			sprinkle.style.top=parseInt(sprinkle.style.top)+ Math.random()*50+"px"
+			sprinkle.style.left = Math.random()*2000+"px"
+		}
+		}
+		setInterval(fall, 200)
+	
+		
+	sprinkle.style.transform  = Math.random()*(90) + "deg";
+	sprinkle.style.height =  Math.floor(Math.random()* (20 - 5 + 1)) + 5 + "px"
+}
+
+		for(let i=0; i<1000; i=i+1){
+			{makeConfetti(i)}
+
+
+		}
+
+	function makeCotti(){
+			let spink = document.createElement("div")
+			document.body.appendChild(spink)
+			spink.classList.add("conf")
+			spink.style.top="-50px"
+
+
+		
+		function fall(){
+			if (parseInt(spink.style.top)>1000){
+			spink.style.top=="-100px"
+			
+		}
+		else{
+			spink.style.top=parseInt(spink.style.top)+ Math.random()*50+"px"
+			spink.style.left = Math.random()*2000+"px"
+		}
+		}
+		setInterval(fall, 200)
+	
+		
+	spink.style.transform  = Math.random()*(90) + "deg";
+	spink.style.height =  Math.floor(Math.random()* (20 - 5 + 1)) + 5 + "px"
+}
+
+		for(let i=0; i<1000; i=i+1){
+			{makeCotti(i)}
+
+
+		}
+
+		</script>
+</body>
+</html>

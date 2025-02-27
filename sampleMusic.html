@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+
+		<style type="text/css">
+			#ayah{
+				width:100%;
+				height:800px;
+				background-image:url(ayahGuitar.png);
+				background-size:cover;
+				transition:2s;
+
+			}
+
+			body{
+				margin:0px;
+			}
+
+			#song1{
+				opacity:0;
+				position:absolute;
+			}
+
+		</style>
+
+</head>
+<body>
+
+
+	<div id="ayah"></div>
+		<audio id="song1" src="talkToMe.m4a" controls></audio>
+
+
+	<script type="text/javascript">
+
+		ayah.addEventListener("click", function(){
+			ayah.style.opacity="0"
+			ayah.style.width="0px"
+
+			song1.style.opacity="1"
+			song1.style.top="0px"
+
+		})
+		
+	</script>
+
+</body>
+</html>

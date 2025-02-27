@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+
+	<style type="text/css">
+		
+		#w{
+			width:100px;
+			height:100px;
+			background-color:green;
+
+		}
+
+		#q{
+			width:400px;
+			height:400px;
+			background-color:yellow;
+		}
+
+		.pepps{
+			width:10px;
+			height:10px;
+			background-color:orange;
+			position:absolute;
+		}
+	</style>
+</head>
+<body>
+
+	<div id="w"></div>
+
+	<div id="q"></div>
+
+	<!-- <ahref=""><div></div></a> -->
+
+	<script type="text/javascript">
+
+let counter=0;
+		
+		w.addEventListener("click", function(){
+
+			q.addEventListener("click", function(event){
+				counter=counter+1
+				let div = document.createElement("div")
+				let link = document.createElement("a")
+				q.appendChild(link)
+				link.appendChild(div)
+				link.href=counter+".html"
+
+				div.classList.add('pepps')
+				div.style.left=event.clientX+"px"
+				div.style.top=event.clientY+"px"
+			})
+
+		})
+	</script>
+
+</body>
+</html>

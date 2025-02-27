@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style type="text/css">
+		body{
+			background-color:lightpink;
+		}
+		#rat1{
+			width: 400px;
+				position: absolute;
+			height: 500px;
+			background-image: url("rat.png");
+			margin-left: -100px;
+			background-size: cover;
+			display: inline-block;
+			background-repeat: no repeat;
+			animation: bobble 2s infinite alternate;
+
+
+
+		}
+
+		#rat2{
+				width: 300px;
+				position: fixed;
+			height: 500px;
+			background-image: url("rat2.png");
+			margin-left: 900px;
+			background-size: cover;
+			display: inline-block;
+			background-repeat: no repeat;
+			animation: bobble 1s infinite alternate;
+			z-index:10;
+
+	
+			
+		}
+		#rat3{
+			width: 400px;
+				position: fixed;
+			height: 450px;
+			background-image: url("rat3.png");
+			margin-left: 500px;
+			top:30px;
+			background-size: cover;
+			display: inline-block;
+			background-repeat: no repeat;
+			animation: bobble 1.7s infinite alternate;
+			z-index:10;
+
+			
+		}
+		#rat4{
+			width: 400px;
+				position: fixed;
+			height: 500px;
+			background-image: url("rat4.png");
+			margin-left: 200px;
+			top: 30px;
+			background-size: cover;
+			display: inline-block;
+			background-repeat: no repeat;
+			animation: bobble 1.2s infinite alternate;
+			z-index:10;
+
+			
+		}
+
+		#rat5{
+			width: 280px;
+			margin-top:330px;
+
+			z-index:10;
+				position: fixed;
+			height: 250px;
+			background-image: url("rat5.png");
+			margin-left:500px;
+			top:5px;
+			background-size: cover;
+			display: inline-block;
+			background-repeat: no repeat;
+			animation: bobble 2.4s infinite alternate;
+			z-index:10;
+		}
+		#shadow{
+			width: 130px;
+			height:520px;
+			position: fixed;
+			background-color: deeppink;
+			border-radius:100%;
+			rotate:80deg;
+			z-index:-10;
+			margin-left: 260px;
+			margin-top:165px;
+			animation: bubble 2s infinite alternate;
+			
+
+		}
+		
+		#shadow1{
+			width: 130px;
+			height:450px;
+			position: fixed;
+			background-color: deeppink;
+			border-radius:100%;
+			rotate:80deg;
+			z-index:-10;
+			margin-left: 500px;
+			margin-top:200px;
+			animation: bubble 1.2s infinite alternate;
+			
+
+		}
+		@keyframes bobble {
+			0% {
+				transform: rotate(0deg);
+			}
+			25% {
+				transform: rotate(-5deg);
+			}
+			75% {
+				transform: rotate(5deg);
+			}
+			100% {
+				transform: rotate(-3deg);
+			}
+		}
+
+		@keyframes bubble {
+			0% {
+				transform: rotate(0deg);
+			}
+			25% {
+				transform: rotate(5deg);
+			}
+			75% {
+				transform: rotate(-5deg);
+			}
+			100% {
+				transform: rotate(3deg);
+			}
+	
+		
+	</style>
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+	<div id= rat1></div>
+	<div id= rat2></div>
+	<div id= rat3></div>
+	<div id= shadow></div>
+	<div id= shadow1></div>
+
+	<div id= rat4></div>
+		<div id= rat5></div>
+
+
+</body>
+</html>
