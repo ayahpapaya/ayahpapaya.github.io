@@ -875,6 +875,7 @@ Notre événement approche bientôt. N'oubliez pas de réserver votre place ici:
                 <div class="post-comments-link">commentaires</div>
                 <div class="post-time">10 months ago</div>
             
+                </div>
            <div class="post" onclick="openModal(10)">
                 <div class="post-header">
                     <div class="post-avatar"></div>
@@ -1070,6 +1071,10 @@ const commentsData = [
   { user: 'yvan.papeterie', text: 'pour le 100eme fois, tu n’es pas la dernière roue du carrosse maman! Appelle-moi.' },
   { user: 'huguette.vrai', text: 'tu ne veux pas me rendre visite? Mais t’es vraiment pas gentil à ta pauvre maman. ' }
 ], 
+[],
+[],
+[],
+[],
 [
   { user: 'serge.homme', text: 'Mais Marc, tu fais quoi? C’est absolument absurde que tu commences un Instagram pour l’éducation juste pour me contrarier. Tu as pris notre dispute trop loin. Moi, je serais l’homme le plus grand et je te dis que tu dois t’excuser publiquement. Pour la communauté moderniste.' },
   { user: 'marc.monsieur', text: 'Je pense que c’est toi qui dois t’excuser, non? Je suis juste en train de devenir un professeur culturel pour les pauvres gens comme toi qui pensent qu’ils ont du goût.' },
@@ -1084,8 +1089,9 @@ const commentsData = [
   { user: 'marc.monsieur', text: 'reste triste.' },
   { user: 'yvan.papeterie', text: 'Serge, t’es ma meilleure amie maintenant.' }
 ], 
+
 [
-{ user: 'jesuis.antrios', text: 'Vous allez payer pour ça. L\'art moderne est le futur, le présent, et la seule chose qui donne aux gens les moyens d\'atteindre leur plein potentiel. Vraiment, invoque les dieux d’art moderne pour qu’ils vous condamnent.' },
+{ user: 'jesuis.antrios', text: "Vous allez payer pour ça. L'art moderne est le futur, le présent, et la seule chose qui donne aux gens les moyens d\'atteindre leur plein potentiel. Vraiment, invoque les dieux d’art moderne pour qu’ils vous condamnent." },
   { user: 'warhol.andy', text: 'ouai? Ah..ah oui! Je vous condamne!' },
   { user: 'braque.georges', text: 'Je ne veux pas être impliqué dans ce désastre. Antrios, t’es pas le futur.' },
   { user: 'marc.monsieur', text: 'hah! haha! Hahaha!' },
@@ -1167,8 +1173,7 @@ const dmThreads = [
     user: "yvan.papeterie",
     messages: [
       { from: "yvan.papeterie", text: "PROBLÈME INSOLUBLE: ma mère veut emménager avec moi..." },
-      { from: "marc.monsieur", text: "oh non...oh Yvan, j'éspere que tu as dit non?" },
-    { from: "yvan.papeterie", text: "eu...oui?" },
+      { from: "marc.monsieur", text: "oh non...oh Yvan, j'éspere" }
     ]
   }
 ];
